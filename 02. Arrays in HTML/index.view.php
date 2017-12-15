@@ -46,7 +46,28 @@
 		</li>
 		<li>
 			<strong>Assigned_to: </strong> <?= $task['assigned_to']; ?>
-		</li>		
+		</li>
+<!-- 1. ong way to check if statement is true or false  -->
+		<li>
+			<strong>Status: </strong>
+			<?php 
+				if ($task['completed']) {
+					echo '&#9989';
+				} else {
+					echo 'Incomplete';
+				}
+			?>
+		</li>
+<!-- 2. ong way to check if statement is true or false  -->
+		<li>
+			<strong>Status: </strong>
+			<?php if ($task['completed']) :?>
+				<span>&#9989</span>
+			<?php else: ?>
+				<span>Incomplete</span>
+			<?php endif;  ?>
+		</li>
+<!-- short way to check if statement is true or false  -->
 		<li>
 			<strong>Completed: </strong> <?= $task['completed'] ? 'Complete' : 'Incomplete'; ?>
 		</li>
