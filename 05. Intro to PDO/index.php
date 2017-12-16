@@ -1,8 +1,16 @@
 <?php 
 
-require 'bootstrap.php';
+require 'core/bootstrap.php';
 
-/* assign $query method slectAll() to $tasks variable to fetch exact query results */
-$tasks = $query->selectAll('todos');
+// $router = new Router;
 
-require 'index.view.php';
+// we load routes
+// require 'routes.php';
+
+// use class Router to call method direct()
+// require $router->direct($uri);
+
+require $router = Router::load('routes.php')
+	->direct(Request::uri());
+
+
