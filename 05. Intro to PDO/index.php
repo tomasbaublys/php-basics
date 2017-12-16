@@ -1,14 +1,8 @@
 <?php 
 
-require 'Task.php';
-require 'functions.php';
+require 'bootstrap.php';
 
-// connectToDb function retuns PDO, we saving it to $pdo variable
-$pdo = connectToDb();
-
-// fetchAllTasks($pdo) function retuns tasks, we saving it to $tasks variable
-$tasks = fetchAllTasks($pdo);
-
-// var_dump($tasks[1]->showTasks());
+/* assign $query method slectAll() to $tasks variable to fetch exact query results */
+$tasks = $query->selectAll('todos');
 
 require 'index.view.php';
