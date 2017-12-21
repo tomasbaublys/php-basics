@@ -1,6 +1,6 @@
 <?php 
 
-/* assign $query method slectAll() to $tasks variable to fetch exact query results */
-$tasks = $query->selectAll('todos');
+$users = $app['database']->selectAll('users');
+$tasks = $app['database']->selectAll('todos');
 
 require 'views/index.view.php';

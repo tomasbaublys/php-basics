@@ -1,5 +1,9 @@
 <?php require ('partials/head.php'); ?>
 
+<?php foreach ($users as $user) : ?>
+	<li><?= $user->name; ?></li>
+<?php endforeach; ?>
+
 	<h1>My Tasks</h1>
 	<?php foreach ($tasks as $task) :?>
 		<li>
