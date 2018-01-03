@@ -1,5 +1,7 @@
 <?php 
 
+namespace App\Core;
+
 // just a place to bind dependency
 class App 
 {
