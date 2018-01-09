@@ -53,6 +53,24 @@ while ($loopCond == true){
 }
 echo "<p>And now it's done.</p>";
 
+// 3. Example
+$headCount = 0;
+$flipCount = 0;
+while ($headCount < 3) {
+  $flip = rand(0,1);
+  $flipCount ++;
+  if (! $flip){
+    $headCount ++;
+    echo "H";
+  }
+  else {
+    $headCount = 0;
+    echo "T";
+  }
+}
+
+echo "<p>It took {$flipCount} flips!</p>";
+
 /* 4. A do/while loop check the condition after each iteration before looping back. It execute its statements at least once, even if the condition is false the first time. */
 
 // 1. Example 
@@ -65,10 +83,10 @@ do {
 
 // 2. Example
 $loopCond = false;
-  do {
-    echo "<p>The loop ran even though the loop condition is false.</p>";
-  } while ($loopCond); 
-  echo "<p>Now the loop is done running.</p>";
+do {
+echo "<p>The loop ran even though the loop condition is false.</p>";
+} while ($loopCond); 
+echo "<p>Now the loop is done running.</p>";
 
 
 
