@@ -37,3 +37,5 @@ switch ($i):
     ...
 endswitch;
 
+*/
+
