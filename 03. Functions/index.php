@@ -16,6 +16,10 @@ echo $mynum . '</br>';
 // Using functions whatIsToday() functions.php file
 whatIsToday();
 
+// Using functions whatIsToday() functions.php file
+$name = "Tomas";
+letterFromName($name);
+
 // Using functions dd() functions.php file
 dd($animals);
 

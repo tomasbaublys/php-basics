@@ -16,13 +16,18 @@ function verifyAge($font, $size, $age){
 }
 
 function whatIsToday(){
-    echo "Today is " . date('l', mktime());
+    echo "Today is " . date('l', mktime()) . '</br>';
 }
 
 // Passing an argument by reference is done by prepending an ampersand (&) to the argument name in the function definition, as shown in the example below:
 function selfMultiply(&$number){
     $number *= $number;
     return $number;
+}
+
+// print a random character from your name to the screen.
+function letterFromName($name) {
+    echo substr($name, (rand(0, strlen($name) - 1)), 1);
 }
  
 
