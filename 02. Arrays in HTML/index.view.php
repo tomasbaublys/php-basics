@@ -72,5 +72,7 @@
 			<strong>Completed: </strong> <?= $task['completed'] ? 'Complete' : 'Incomplete'; ?>
 		</li>
 	</ul>
+<!-- 	Imagine the first chosen card was the 7 of Diamonds. -->
+	<p><?= 'You have the ' . $deck[3][0] . '!'; ?></p>
 </body>
 </html>

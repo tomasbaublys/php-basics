@@ -37,4 +37,10 @@ $task = [
 	'completed' => true
 ];
 
+// you can also store other arrays in array! This is called a multidimensional array.
+$deck = array(array('2 of Diamonds', 2),
+              array('5 of Diamonds', 5),
+              array('7 of Diamonds', 7),
+              array('8 of Diamonds', 8));
+
 require 'index.view.php';
