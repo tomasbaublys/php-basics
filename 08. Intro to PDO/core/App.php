@@ -6,7 +6,10 @@ namespace App\Core;
 class App 
 {
 
-	protected static $registry = [];
+	protected static $registry = [
+		/* will be like
+		'config' => []; */
+	];
 
 	public static function bind($key, $value)
 	{
@@ -21,5 +24,4 @@ class App
 		}
 		return static::$registry[$key];
 	}
-
 }

@@ -9,7 +9,8 @@ class QueryBuilder
 		$this->pdo = $pdo;
 	}
 	
-	public function selectAll($table) {
+	public function selectAll($table) 
+	{
 	// Preparing a sql query
 	$statement = $this->pdo->prepare("select * from {$table}");
 

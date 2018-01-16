@@ -2,6 +2,7 @@
 
 use App\Core\App;
 
+// key -> 'config' and we fetching data from config.php
 App::bind('config', require 'config.php');
 
 /* for example:
@@ -28,3 +29,4 @@ function redirect($path)
 {
 	header("Location: /{$path}");
 }
+

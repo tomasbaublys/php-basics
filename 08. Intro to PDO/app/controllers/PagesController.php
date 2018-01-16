@@ -19,3 +19,4 @@ class PagesController
 		return view('contact');
 	}
 }
+
