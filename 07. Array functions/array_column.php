@@ -34,5 +34,14 @@ $authors = array_column($posts, 'author', 'title');
 var_dump($titles);
 var_dump($authors);
 
+function cube($n)
+{
+    return($n * $n * $n);
+}
+
+$a = array(1, 2, 3, 4, 5);
+$b = array_map("cube", $a);
+var_dump($b);
+
 
 
