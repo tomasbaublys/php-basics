@@ -24,13 +24,13 @@ class Router
 	public function post($uri, $controller) 
 	{
 		$this->routes['POST'][$uri] = $controller;
+
 	}
 
+	// from Request.php $uri = uri() and $requestType = method()
 	public function direct($uri, $requestType)
 	{
-		/* function search key - 'about' => value - 'controllers/about.php' */
 		if (array_key_exists($uri, $this->routes[$requestType])) {
-
 			return $this->callAction(
 				...explode('@', $this->routes[$requestType][$uri])
 			);
@@ -51,3 +51,4 @@ class Router
 		return $controller->$action();
 	}
 }
+

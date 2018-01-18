@@ -5,6 +5,8 @@ use App\Core\App;
 // key -> 'config' and we fetching data from config.php
 App::bind('config', require 'config.php');
 
+
+
 /* for example:
 App::bind('foo', 'bar');
 die(var_dump('foo')); */
@@ -25,8 +27,11 @@ function view($name, $data = [])
 	return require "app/views/{$name}.view.php";
 }
 
+
 function redirect($path)
 {
 	header("Location: /{$path}");
 }
+
+
 

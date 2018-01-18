@@ -20,5 +20,6 @@ class Connection
 		} catch (PDOException $e) {
 			die($e->getMessage());
 		}
+
 	}
 }
