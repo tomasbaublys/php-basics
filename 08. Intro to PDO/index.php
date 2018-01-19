@@ -1,5 +1,6 @@
 <?php 
 
+// in PHP 7 we could do like this: use App\Core\{Router, Request};
 use App\Core\Router;
 use App\Core\Request;
 
@@ -15,3 +16,4 @@ Router::load('app/routes.php')
 3.	Class Router direct() method takes $uri from Request uri() method and $requestType from method() method and returns callAction method by exploding controller in 2 parts, for example $controller->UserController and $action->index;
 4.	Class Router callAction() method assign and returns relevant action for controller, which we describe in given ...Controller.php file;
  */
+
